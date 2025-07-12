@@ -120,7 +120,7 @@ html {
 .main-wrapper {
     max-width: var(--site-max-width);
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 80px 40px;
 }
 
 .btn {
@@ -134,7 +134,7 @@ html {
 }
 
 .btn:hover {
-    transform: translateY(-0.25rem);
+    transform: translateY(-0.4px);
 
 }
 
@@ -257,22 +257,19 @@ nav ul a:hover {
     background-color: var(--accent-color-orange-hover);
 }
 
-/* SERVICES */
-
-
   /* SERVICES SECTION */
 
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
-  gap: 2.5rem;
-  margin-top: 1.5rem;
+  gap: 40px;
+  margin-top: 24px;
   color: var(--off-white);
   padding-bottom: 40px;
 }
 
 .services-list img {
-  width: 3.125rem;
+  width: 50px;
 }
 
 
@@ -282,8 +279,8 @@ nav ul a:hover {
 }
 
 .services-list div {
-  padding: 2.5rem;
-  border-radius: 0.5rem;
+  padding: 50px;
+  border-radius: var(--border-radius-m);
 }
 
 
@@ -308,19 +305,19 @@ nav ul a:hover {
 .work-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-top: 1.5rem;
+  gap: 40px;
+  margin-top: 24px;
   }
 
 .work {
-   border-radius: 0.5rem;
+   border-radius: var(--border-radius-s);
    position: relative;
    overflow: hidden;
 }
 
 .work img {
   width: 100%;
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  border-radius: 8px 8px 0px 0px;
   transition: transform 0.5s;
 
 }
@@ -328,8 +325,8 @@ nav ul a:hover {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(85,32,73,0.9), #E74C3C);
-   border-radius: 0.5rem;
+  background: linear-gradient(rgba(8, 8, 8, 0.9), #524d4c);
+   border-radius: var(--border-radius-s);
    position: absolute;
    left: 0;
    bottom: 0;
@@ -338,21 +335,21 @@ nav ul a:hover {
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   padding: 0rem 2.5rem;
+   padding: 0px 40px;
    text-align: center;
-   color: var(--brand-off-white);
+   color: var(--off-white);
    transition: height 0.5s;
    cursor: pointer;
 
 }
 
 .layer img {
-  width: 4rem;
-  padding: 1.5rem 0rem;
+  width: 64px;
+  padding: 24px 0px;
 }
 
 .layer h3 {
-  color: var(--brand-off-white);
+  color: var(--off-white);
 
 }
 
@@ -366,11 +363,11 @@ nav ul a:hover {
 }
 
 .work span {
-  padding: 2rem 1rem;
+  padding: 32px 16px;
   display: block;
   background-color: var(--secondary-color);
   color: var(--off-white);
-  font-size: 1.5rem;
+  font-size: var(--font-size-l);
   line-height: 1.4;
   font-family: Poppins, sans-serif;
   font-weight: 600;
@@ -381,15 +378,18 @@ nav ul a:hover {
 
 h1 {
     font-size: var(--font-size-xl);
+    font-family: "Roboto Medium", sans-serif;
 }
 
 
 h2 {
     font-size: var(--font-size-l);
+    font-family: "Roboto Medium", sans-serif;
 }
 
 h3 {
     font-size: var(--font-size-m);
+    font-family: "Roboto Medium", sans-serif;
 }
 
 
@@ -489,28 +489,49 @@ footer {
 
 
 /* RESPONSIVE */
+    
+/* RESPONSIVE FOR DEVICES BELOW 700PX */
 
-/* (DESKTOP)RESPONSIVE ABOVE 1024PX  */
+@media screen and (max-width: 700px) {
 
-@media screen and (min-width: 1024px) {
 
+/* ROOT STYLES RELATED */
+
+:root {
+
+    /* FONT SIZES */
+    --font-size-m: 1rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 3rem;
+    --font-size-xxl: 3.75rem;
+    
+}
+
+/* SERVICES RELATED */
+
+.services-list {
+  grid-template-columns: 1fr;
 
 }
 
-/* (TABLET) RESPONSIVE BETWEEN 769 - 1023PX */
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-
-
+.services-list img {
+  width: 40px;
 }
 
-
-       
-/* (MOBILE) RESPONSIVE BELOW FOR MAX WIDTH 768PX */
-
-@media screen and (max-width: 768px) {
+/* PORTFOLIO - WORK RELATED */
 
 
+.work-list {
+
+  grid-template-columns: 1fr;
+
+  }
+
+/* GENERAL CSS RELATED */
+
+.main-wrapper {
+    padding: 80px 24px;
+}
 
 }
 
