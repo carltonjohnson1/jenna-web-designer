@@ -1,0 +1,521 @@
+
+/* CSS RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+
+/* ROOT */
+
+:root {
+
+    
+    /* COLORS */
+    --white: #fff;
+    --black: #000;
+    --off-white: #e0dcdc;
+    --off-black: #141414;
+    --primary-color-dark-blue: #1B1F3B;
+    --secondary-color: #333333;
+    --accent-color-orange: #E74C3C;
+    --accent-color-orange-hover: #EB7565;
+
+
+    /* FONT SIZES */
+    --font-size-s: 0.875rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.125rem;
+    --font-size-l: 2.25rem;
+    --font-size-xl: 3.635rem;
+    --font-size-xxl: 4.24rem;
+  
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+ 
+    /* BORDER RADIUS */
+    --border-radius-s: 4px;
+    --border-radius-m: 12px;
+    --border-radius-l: 32px;
+    --border-radius-circle: 50%;
+
+    /* SITE MAX WIDTH */
+    --site-max-width: 1200px;
+    
+}
+
+/* DOWNLOADED FONTS */
+@font-face {
+    font-family: "Roboto Regular", sans-serif;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium", sans-serif;
+    src: url("fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Semi-bold", sans-serif;
+    src: url("fonts/Roboto-SemiBold.ttf");
+}
+
+
+/* General Global CSS */
+
+body {
+     font-family: "Roboto Regular", sans-serif;
+     background-color: var(--black);
+     color: var(--off-white);
+     font-size: var(--font-size-m);
+     line-height: 1.6;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+ 
+.main-wrapper {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    padding: 8px 24px;
+    border: none;
+    border-radius: var(--border-radius-s);
+    font: var(--font-size-m);
+    background-color: var(--off-white);
+    color: var(--off-black);
+    transition: transform 0.25s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-0.25rem);
+
+}
+
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* HEADER STYLING */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+
+}
+
+/* NAVIGATION STYLING INCLUDING LOGO AND SOCIALS */
+
+.nav-logo {
+    width: 100px;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav ul li {
+    font-size: var(--font-size-m) ;
+
+}
+
+nav ul a {
+    color: var(--off-white);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+
+nav ul a:hover {
+    color: var(--accent-color-orange);
+    border-bottom: 2px solid var(--off-white);
+    padding-bottom: 5px;
+
+}
+
+.header-social i {
+    color: var(--off-white);
+    font-size: var(--font-size-m);
+    padding: 0 6px;
+}
+
+.header-social i:hover {
+    color: var(--accent-color-orange);
+}
+
+
+/* HERO SECTION */
+
+.hero-container {
+    height: 70vh;
+    background-image: url("../images/hero-image.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.header-content h1 {
+    animation: 0.8s slidein-from-left ease 1s;
+
+}
+
+.header-content p {
+    font-size: var(--font-size-m);
+    margin-bottom: 40px;
+
+}
+
+.header-content span {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.hero-btn {
+    background-color: var(--accent-color-orange);
+
+}
+
+.hero-btn:hover {
+    background-color: var(--accent-color-orange-hover);
+}
+
+/* SERVICES */
+
+
+  /* SERVICES SECTION */
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  color: var(--off-white);
+  padding-bottom: 40px;
+}
+
+.services-list img {
+  width: 3.125rem;
+}
+
+
+
+.services-list h3 {
+  color: var(--off-white);
+}
+
+.services-list div {
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+
+.services-list div:nth-of-type(1) {
+  background-color: var(--primary-color-dark-blue);
+
+}
+
+.services-list div:nth-of-type(2) {
+  background-color: var(--accent-color-orange-hover);
+
+
+}
+
+.services-list div:nth-of-type(3) {
+  background-color: var(--secondary-color);
+
+}
+
+ /* PORTFOLIO SECTION START */
+
+.work-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  }
+
+.work {
+   border-radius: 0.5rem;
+   position: relative;
+   overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  transition: transform 0.5s;
+
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(85,32,73,0.9), #E74C3C);
+   border-radius: 0.5rem;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 0rem 2.5rem;
+   text-align: center;
+   color: var(--brand-off-white);
+   transition: height 0.5s;
+   cursor: pointer;
+
+}
+
+.layer img {
+  width: 4rem;
+  padding: 1.5rem 0rem;
+}
+
+.layer h3 {
+  color: var(--brand-off-white);
+
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+
+}
+
+.work span {
+  padding: 2rem 1rem;
+  display: block;
+  background-color: var(--secondary-color);
+  color: var(--off-white);
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+
+
+/* HEADINGS */
+
+h1 {
+    font-size: var(--font-size-xl);
+}
+
+
+h2 {
+    font-size: var(--font-size-l);
+}
+
+h3 {
+    font-size: var(--font-size-m);
+}
+
+
+
+/* FOOTER SECTION STYLING */
+
+footer {
+    background-color: var(--off-black);
+}
+
+.footer-content {
+   padding: 40px 0px;
+}
+
+.footer-form-and-logoSocials-wrapper {
+    display: flex;
+    padding-bottom: 30px
+}
+
+.footer-logo-links-wrapper {
+    flex: 1;
+}
+.footer-form {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-copright-and-links-wrapper {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--off-white)
+
+}
+
+.footer-copright-and-links-wrapper {
+    font-size: var(--font-size-n);
+}
+
+.footer-copright-and-links-wrapper li {
+    font-size: var(--font-size-n);
+
+}
+
+
+/* FOOTER SOCIALS */
+
+.footer-social i {
+    display: flex;
+    flex-direction: column;
+    color: var(--off-white);
+    margin: 15px 0px;
+    font-size: var(--font-size-l);
+    padding: 10px 0px;
+}
+
+.footer-social i:hover {
+    color: var(--accent-color-orange);
+}
+
+/* HOME PAGE CONTACT FORM STYLING */
+
+.footer-form input {
+    padding: 12px 8px 12px 5px;
+    border-radius: var(--border-radius-s);
+    width: 75%;
+    margin: 10px 0px;
+}
+
+#submit {
+    cursor: pointer;
+    width: 25%;
+}
+
+#submit:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* ANIMATIONS */
+
+@keyframes slidein-from-left {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+         transform: translateX(0%);
+
+    }
+}
+
+
+
+/* RESPONSIVE */
+
+/* (DESKTOP)RESPONSIVE ABOVE 1024PX  */
+
+@media screen and (min-width: 1024px) {
+
+
+}
+
+/* (TABLET) RESPONSIVE BETWEEN 769 - 1023PX */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+
+}
+
+
+       
+/* (MOBILE) RESPONSIVE BELOW FOR MAX WIDTH 768PX */
+
+@media screen and (max-width: 768px) {
+
+
+
+}
+
+    
+
+
+
+
