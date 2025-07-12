@@ -3,7 +3,7 @@
 // alert when portfolio buttons are clicked to say just demo
 
 function justDemo() {
-    alert="Link isn't active - Demo site";
+    alert("Link isn't active - This is just a demo site");
 }
 
 
