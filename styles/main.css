@@ -541,6 +541,61 @@ footer {
 
   }
 
+  /* FOOTER */
+
+
+.footer-form-and-logoSocials-wrapper {
+    flex-direction: column;
+
+}
+
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-copright-and-links-wrapper {
+    /* padding: 10px 0px; */
+    flex-direction: column;
+    /* justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--off-white) */
+
+}
+
+.footer-copright-and-links-wrapper nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* FOOTER SOCIALS */
+
+.footer-social i {
+    display: flex;
+    flex-direction: column;
+    color: var(--off-white);
+    margin: 15px 0px;
+    font-size: var(--font-size-l);
+    padding: 10px 0px;
+}
+
+.footer-social i:hover {
+    color: var(--accent-color-orange);
+}
+
+/* HOME PAGE CONTACT FORM STYLING */
+
+.footer-form input {
+    padding: 12px 8px 12px 5px;
+    border-radius: var(--border-radius-s);
+    width: 75%;
+    margin: 10px 0px;
+}
+
+
   /* ABOUT PAGE */
 
   

@@ -1,10 +1,10 @@
-# Coding Challenges Number 1 - 13. All challenges covered
+# Coding Challenges
 
 ![screenshot to come](./images/preview.jpg)
 
 ## Content
 
-This webpage was created as part of a Coding Diploma course with [Itonlinelearning](https://www.itonlinelearning.com/). It covers 13 coding challenges at the end of the HTML and CSS section of the course.
+This webpage was created as part of a Coding Diploma course with [Itonlinelearning](https://www.itonlinelearning.com/). It covers various coding challenges - challenges 1 - 11 of 13 - at the end of the HTML and CSS section of the course.
 
 ## The Brief
 
@@ -75,15 +75,3 @@ Requirements: Follow accessibility best practices such as using semantic HTML, p
 Challenge: Convert a provided PSD (Photoshop) file or image design into a fully functional HTML webpage.
 
 Requirements: Pay attention to layout accuracy, typography, spacing, and visual fidelity. Use HTML and CSS to replicate the design as closely as possible while maintaining responsiveness.
-
-### Challenge 12
-
-Challenge: Design and code an HTML email template that is compatible with various email clients and devices.
-
-Requirements: Consider email design best practices, such as inline CSS, table-based layout, and responsive design techniques. Test the template across different email clients and devices to ensure compatibility.
-
-### Challenge 13
-
-Challenge: Design and code the user interface (UI) for a web application that will offer a different design, layout and function from that traditional website. Try to create something that is in the context of a "web application" not a "web site" such as a stock trading application, a banking application, a media streaming or a gaming application using HTML and CSS, ensuring optimization for both web and mobile platforms.
-
-Requirements: Create a comprehensive UI layout with a variety of HTML elements such as buttons, dropdown menus, input fields, tables, charts, and navigation bars to facilitate user interaction and control various aspects of the stock trading application. Pay close attention to responsive design principles to ensure optimal display and usability across different screen sizes and devices. Emphasize consistency in look and feel between the web and mobile app versions while considering the unique user experience requirements of each platform. Incorporate mobile-friendly design patterns, such as touch-friendly controls and intuitive navigation, to enhance usability on mobile devices. Test the web and mobile app designs thoroughly to ensure seamless functionality and user experience across different platforms and devices.
