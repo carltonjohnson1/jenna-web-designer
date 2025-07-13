@@ -449,6 +449,44 @@ footer {
     color: white;
 }
 
+
+/* ABOUT PAGE */
+
+.about {
+    display: flex;
+    gap: 50px;
+    background-image: url("../images/background-image-about.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    align-items: center;
+
+}
+
+
+.about-txt-body > .btn {
+    width: 50%;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.about-txt-body > .btn a {
+    color: var(--black);  
+}
+
+
+.about-txt-body > .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+
 /* ANIMATIONS */
 
 @keyframes slidein-from-left {
@@ -502,6 +540,22 @@ footer {
   grid-template-columns: 1fr;
 
   }
+
+  /* ABOUT PAGE */
+
+  
+.about {
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.about-txt-body > .btn {
+    width: 50%;
+    margin-top: 30px;
+
+}
 
 /* GENERAL CSS RELATED */
 
